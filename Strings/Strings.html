@@ -10,22 +10,22 @@
       <input type="text" name="inputString" size="30" value="String" onclick="this.select()">
       <input type="text" name="userInput" size="20" value="Start / End" onclick="this.select()">
       <br><br>
-      <input type="button" value="Starts with (my version)" onclick="myStartsWith()">
-      <input type="button" value="Starts with (JS version)" onclick="jsStartsWith()">
-      <input type="button" value="Ends with (my version)" onclick="myEndsWith()">
-      <input type="button" value="Ends with (JS version)" onclick="jsEndsWith()">
+      <input type="button" value="Starts with (my version)" onclick="myStartsWith(document.strings.inputString.value, document.strings.userInput.value)">
+      <input type="button" value="Starts with (JS version)" onclick="jsStartsWith(document.strings.inputString.value, document.strings.userInput.value)">
+      <input type="button" value="Ends with (my version)" onclick="myEndsWith(document.strings.inputString.value, document.strings.userInput.value)">
+      <input type="button" value="Ends with (JS version)" onclick="jsEndsWith(document.strings.inputString.value, document.strings.userInput.value)">
       <br><br><br><br><b>Case / NaN check</b><br><br>
       <input type="text" name="inputCaseString" size="30" value="Case-check" onclick="this.select()">
       <br><br>
-      <input type="button" value="Is Camel case?" onclick="isCamelCase()">
-      <input type="button" value="Is Snake case?" onclick="isSnakeCase()">
-      <input type="button" value="Is NaN? (my version)" onclick="myIsNaN()">
-      <input type="button" value="Is NaN? (js version)" onclick="jsIsNaN()">
+      <input type="button" value="Is Camel case?" onclick="isCamelCase(document.strings.inputCaseString.value)">
+      <input type="button" value="Is Snake case?" onclick="isSnakeCase(document.strings.inputCaseString.value)">
+      <input type="button" value="Is NaN? (my version)" onclick="myIsNaN(document.strings.inputCaseString.value)">
+      <input type="button" value="Is NaN? (js version)" onclick="jsIsNaN(document.strings.inputCaseString.value)">
       <br><br><br><br><b>Reverse string</b><br><br>
       <input type="text" name="reverseStr" size="30" value="Reverse" onclick="this.select()">
       <br><br>
-      <input type="button" value="Reverse string (my version)" onclick="jsReverseString()">
-      <input type="button" value="Reverse string (js version)" onclick="myReverseString()">
+      <input type="button" value="Reverse string (my version)" onclick="jsReverseString(document.strings.reverseStr.value)">
+      <input type="button" value="Reverse string (js version)" onclick="myReverseString(document.strings.reverseStr.value)">
     </form>
 <script src="Strings.js"></script>
   </body>
