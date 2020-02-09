@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form name="regexps">
+      <input type="text" name="inputString" size="30" value="String" onclick="this.select()">
+      <input type="button" value="Is snake case?" onclick="alert(isSnakeCase(document.regexps.inputString.value))">
+      <input type="button" value="Is camel case?" onclick="alert(isCamelCase(document.regexps.inputString.value))">
+      <input type="button" value="Is Email?" onclick="alert(isEmail(document.regexps.inputString.value))">
+      <input type="button" value="Is phone number?" onclick="alert(isPhoneNumber(document.regexps.inputString.value))">
+    </form>
+  </body>
+  <script src="regexp.js"></script>
+</html>
