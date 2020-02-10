@@ -6,8 +6,8 @@ function isCamelCase(str) {
   return result.length >= 2;
 }
 function isEmail(str) {
-  return /\w\w\w\w@\w\w/.test(str);
+  return /[.-\w]+@([-\w]+\.)+[-\w]+/g.test(str);
 }
 function isPhoneNumber(str) {
-  return /[(\d\d)-\d\d\d-\d\d-\d\d][+\d\d\d(\d\d)\d\d\d\d\d\d\d]/.test(str);
+  return /^(\+)?(\d{3})?-?\(\d{2}\)-?\d{3}-?\d{2}-?\d{2}/.test(str);
 }
