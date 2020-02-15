@@ -8,7 +8,7 @@
     <form name="arrays">
       Delete last or delete 'n' last elements <br>
       <input type="text" name="initialArray" size="30" value="1 2 3 4 5" onclick="this.select()">
-      <input type="text" name="initialN" size="10" onclick="this.select()">
+      <input type="number" name="initialN" size="10" onclick="this.select()">
       <br> <br>
       <input type="button" value="DO IT!" onclick="alert(initial(
       document.arrays.initialArray.value, document.arrays.initialN.value))"><br><br>
@@ -27,9 +27,9 @@
       document.arrays.unionArray1.value, document.arrays.unionArray2.value,
       document.arrays.unionArray3.value, document.arrays.unionArray4.value))"><br><br>
       Create list of integers <br>
-      <input type="text" name="rangeStart" size="10" value="10" onclick="this.select()">
-      <input type="text" name="rangeEnd" size="10" value="" onclick="this.select()">
-      <input type="text" name="rangeStep" size="10" value="" onclick="this.select()">
+      <input type="number" name="rangeStart" size="10" value="10" onclick="this.select()">
+      <input type="number" name="rangeEnd" size="10" value="" onclick="this.select()">
+      <input type="number" name="rangeStep" size="10" value="" onclick="this.select()">
       <br> <br>
       <input type="button" value="DO IT!" onclick="alert(range(document.arrays.rangeStart.value,
       document.arrays.rangeEnd.value, document.arrays.rangeStep.value))">

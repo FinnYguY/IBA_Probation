@@ -1,11 +1,10 @@
 function initial(array, n) {
   n = n || 1;
   let workArray = array.split(" ");
-  let resultArray = [];
-  for (let i = 0; i < workArray.length - n; i++) {
-    resultArray[i] = workArray[i];
+  for (let i = 0; i < n; i++) {
+    console.log(workArray.pop());
   }
-  return resultArray.join("  ");
+  return workArray.join("  ");
 }
 // function compact(array) {
 //   let workArray = array.split(" ");
@@ -46,6 +45,9 @@ function range(start, end, step) {
   step = +step || 1;
   let workRange = [];
   let i = 0;
+  if (step < 0) {
+    return false;
+  }
   if (end == 0) {
     while (i < start) {
       workRange.push(i);
