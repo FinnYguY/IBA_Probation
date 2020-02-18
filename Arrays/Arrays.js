@@ -4,7 +4,7 @@ function initial(array, n) {
   for (let i = 0; i < n; i++) {
     console.log(workArray.pop());
   }
-  return workArray.join("  ");
+  return workArray;
 }
 // function compact(array) {
 //   let workArray = array.split(" ");
@@ -22,7 +22,7 @@ function initial(array, n) {
 // }
 function compact(array) {
   let workArray = array.split(" ");
-  return workArray.filter(Number).join("  ");
+  return workArray.filter(Number);
 }
 function union(array1, array2, array3, array4) {
   let resultArray = [];
@@ -46,7 +46,7 @@ function range(start, end, step) {
   let workRange = [];
   let i = 0;
   if (step < 0) {
-    return false;
+    return workRange;
   }
   if (end == 0) {
     while (i < start) {
@@ -60,7 +60,7 @@ function range(start, end, step) {
         workRange.push(i);
         i += step;
       }
-    } else return false;
+    } else return workRange;
   }
-  return workRange.join("  ");
+  return workRange;
 }
