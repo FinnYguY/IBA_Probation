@@ -6,6 +6,7 @@ function createObj(key1, val1, key2, val2) {
   }
   return userObject;
 }
+createObj(objkey1.value, objval1.value, objkey2.value, objval2.value);
 function isObject(obj) {
   for (let key in obj) {
     if (obj.hasOwnProperty(key)) {
