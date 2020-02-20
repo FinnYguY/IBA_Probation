@@ -4,7 +4,6 @@ function createObj(key1, val1, key2, val2) {
     [key1]: [val1].join(""),
     [key2]: [val2].join(""),
   }
-  console.log(userObject);
   return userObject;
 }
 function isObject(obj) {
@@ -27,4 +26,13 @@ function objectValues(obj) {
 }
 function objectEntries(obj) {
   return Object.entries(obj);
+}
+function objToArr(obj) {
+  let map = new Map(Object.entries(obj));
+  return Array.from(map);
+}
+function arrToObj(str) {
+  let workArr = str.split(" ");
+  let workObj = Object.assign({}, workArr);
+  return Object.entries(workObj);
 }

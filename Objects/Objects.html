@@ -17,6 +17,10 @@
       <button type="button" onclick="alert(objectKeys(userObject))">All object keys</button>
       <button type="button" onclick="alert(objectValues(userObject))">All object values</button>
       <button type="button" onclick="alert(objectEntries(userObject))">All object entries</button>
+      <button type="button" onclick="alert(objToArr(userObject))">Object to array</button> <br><br><br>
+      Enter the array elements <br>
+      <input type="text" id="arrayInput" size="40" value="H e l l o" onclick="this.select()"> <br><br>
+      <button type="button" onclick="alert(arrToObj(arrayInput.value))">Array to object</button>
     </form>
     <script src="Objects.js"></script>
   </body>
