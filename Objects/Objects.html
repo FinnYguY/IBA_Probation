@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form name="objects">
+      Enter the key : value pairs <br>
+      <input type="text" id="objkey1" size="20" value="name" onclick="this.select()">
+      <input type="text" id="objval1" size="20" value="Kira" onclick="this.select()"> <br>
+      <input type="text" id="objkey2" size="20" value="age" onclick="this.select()">
+      <input type="text" id="objval2" size="20" value="33" onclick="this.select()"> <br> <br>
+      <button type="button" onclick="createObj(objkey1.value, objval1.value, objkey2.value, objval2.value)">Create object</button>
+      <button type="button" onclick="alert(isObject(userObject))">Is object</button>
+      <button type="button" onclick="alert(isFunction(userObject))">Is function</button>
+      <button type="button" onclick="alert(objectKeys(userObject))">All object keys</button>
+      <button type="button" onclick="alert(objectValues(userObject))">All object values</button>
+      <button type="button" onclick="alert(objectEntries(userObject))">All object entries</button>
+    </form>
+    <script src="Objects.js"></script>
+  </body>
+</html>
