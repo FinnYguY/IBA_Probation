@@ -20,7 +20,24 @@
       <button type="button" onclick="alert(objToArr(userObject))">Object to array</button> <br><br><br>
       Enter the array elements <br>
       <input type="text" id="arrayInput" size="40" value="H e l l o" onclick="this.select()"> <br><br>
-      <button type="button" onclick="alert(arrToObj(arrayInput.value))">Array to object</button>
+      <button type="button" onclick="alert(arrToObj(arrayInput.value))">Array to object</button> <br><br>
+      Filter array of objects <br>
+      <input type="text" id="arrobjkey1" size="20" value="name" onclick="this.select()">
+      <input type="text" id="arrobjval1" size="20" value="Kira" onclick="this.select()"> <br>
+      <input type="text" id="arrobjkey2" size="20" value="age" onclick="this.select()">
+      <input type="text" id="arrobjval2" size="20" value="33" onclick="this.select()"> <br> <br>
+      <input type="text" id="arrobjkey3" size="20" value="name" onclick="this.select()">
+      <input type="text" id="arrobjval3" size="20" value="John" onclick="this.select()"> <br>
+      <input type="text" id="arrobjkey4" size="20" value="age" onclick="this.select()">
+      <input type="text" id="arrobjval4" size="20" value="27" onclick="this.select()"> <br> <br>
+      <input type="text" id="arrobjkey5" size="20" value="name" onclick="this.select()">
+      <input type="text" id="arrobjval5" size="20" value="Alex" onclick="this.select()"> <br>
+      <input type="text" id="arrobjkey6" size="20" value="age" onclick="this.select()">
+      <input type="text" id="arrobjval6" size="20" value="24" onclick="this.select()"> <br> <br> <br>
+      <input type="text" id="conditionkey" size="20" value="age" onclick="this.select()">
+      <button type="button" onclick="console.log(filterByKey(userArrOfObj, conditionkey))">Filter by key</button> <br>
+      <input type="text" id="conditionval" size="20" value="27" onclick="this.select()">
+      <button type="button" onclick="console.log(filterByValue(userArrOfObj, conditionval))">Filter by value</button>
     </form>
     <script src="Objects.js"></script>
   </body>
