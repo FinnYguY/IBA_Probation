@@ -68,7 +68,7 @@ function arrToObj(str) {
 
 function filterByValue(arr, condition) {
   let conditionObj = {
-    age: 33,
+    age: [condition],
   }
   userArrOfObj = arr.filter(function(item) {
     for (let key in conditionObj) {
@@ -78,4 +78,17 @@ function filterByValue(arr, condition) {
   return true;
   });
   return userArrOfObj;
+  // let result = [];
+  // for (let prop in conditionObj) {
+  //   if (conditionObj.hasOwnProperty(prop)) {
+  //     for (let i = 0; i < 1; i++) {
+  //       console.log("for");
+  //       if (arr[i][prop] === conditionObj[prop]) {
+  //         result.push(arr[i]);
+  //         console.log("last if");
+  //       }
+  //     }
+  //   }
+  // }
+  // return result;
 }
