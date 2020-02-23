@@ -66,29 +66,19 @@ function arrToObj(str) {
   return Object.entries(workObj);
 }
 
-function filterByValue(arr, condition) {
+function filterByPair(arr, name, value) {
+  name = name || 0;
+  value = value || 0;
   let conditionObj = {
-    age: [condition],
+    [name]: [value],
   }
   userArrOfObj = arr.filter(function(item) {
     for (let key in conditionObj) {
-      if (item[key] === undefined || item[key] != conditionObj[key])
+      if (item[key] != conditionObj[key]) {
         return false;
+      }
     }
   return true;
   });
   return userArrOfObj;
-  // let result = [];
-  // for (let prop in conditionObj) {
-  //   if (conditionObj.hasOwnProperty(prop)) {
-  //     for (let i = 0; i < 1; i++) {
-  //       console.log("for");
-  //       if (arr[i][prop] === conditionObj[prop]) {
-  //         result.push(arr[i]);
-  //         console.log("last if");
-  //       }
-  //     }
-  //   }
-  // }
-  // return result;
 }

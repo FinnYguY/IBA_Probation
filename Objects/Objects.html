@@ -21,7 +21,7 @@
       Enter the array elements <br>
       <input type="text" id="arrayInput" size="40" value="H e l l o" onclick="this.select()"> <br><br>
       <button type="button" onclick="alert(arrToObj(arrayInput.value))">Array to object</button> <br><br>
-      Filter array of objects <br>
+      Filter array of objects (!!!CREATE ARRAY AFTER EVERY CHANGE!!!)<br>
       <input type="text" id="arrobjkey1" size="20" value="name" onclick="this.select()">
       <input type="text" id="arrobjval1" size="20" value="Kira" onclick="this.select()"> <br>
       <input type="text" id="arrobjkey2" size="20" value="age" onclick="this.select()">
@@ -35,9 +35,9 @@
       <input type="text" id="arrobjkey6" size="20" value="age" onclick="this.select()">
       <input type="text" id="arrobjval6" size="20" value="24" onclick="this.select()"> <br> <br> <br>
       <input type="text" id="conditionkey" size="20" value="age" onclick="this.select()">
-      <button type="button" onclick="console.log(filterByKey(userArrOfObj, conditionkey.value))">Filter by key</button> <br>
+      <!-- <button type="button" onclick="console.log(filterByKey(userArrOfObj, conditionkey.value))">Filter by key</button> <br> -->
       <input type="text" id="conditionval" size="20" value="27" onclick="this.select()">
-      <button type="button" onclick="console.log(filterByValue(userArrOfObj, conditionval.value))">Filter by value</button> <br><br>
+      <button type="button" onclick="console.log(filterByPair(userArrOfObj, conditionkey.value, conditionval.value))">Filter by value</button> <br><br>
       <button type="button" onclick="createArrayOfObjects(arrobjkey1.value, arrobjval1.value, arrobjkey2.value, arrobjval2.value,
       arrobjkey3.value, arrobjval3.value, arrobjkey4.value, arrobjval4.value,
       arrobjkey5.value, arrobjval5.value, arrobjkey6.value, arrobjval6.value)">Create array of objects</button>
