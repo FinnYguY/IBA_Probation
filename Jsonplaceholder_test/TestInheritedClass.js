@@ -1,4 +1,12 @@
 class Inherited extends Main{
+
+  showCurrentRecord(resource, number) {
+    let url = ('https://jsonplaceholder.typicode.com' + `/${resource}` + `/${number}`);
+    fetch(url)
+    .then(response => response.json())
+    .then(json => console.log(json))
+  }
+
   filterByKeyAndValue(resource, key, value) {
     let url = ('https://jsonplaceholder.typicode.com' + `/${resource}` + `?${key}=${value}`);
     fetch(url)

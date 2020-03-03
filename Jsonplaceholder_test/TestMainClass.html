@@ -27,7 +27,10 @@
       <option value="users">Users</option>
     </select><br><br>
     <b>Record number: </b> <input type="number" id="recordNumber" value="1" onclick="this.select()">
-    <button id="deleteInfo" onclick="inheritedClient.deleteInfo(resourceSelector.value, recordNumber.value)">Delete record</button>
+    <button id="showCurrentRecord" onclick="inheritedClient.showCurrentRecord(resourceSelector.value,
+    recordNumber.value)">Show current record</button>
+    <button id="deleteInfo" onclick="inheritedClient.deleteInfo(resourceSelector.value,
+    recordNumber.value)">Delete record</button>
     <button id="showPicture" onclick="inheritedClient.showPicture(recordNumber.value)">Show picture</button><br><br>
     <b>Key and info to patch:</b>
     <input type="text" id="keyToPatch" onclick="this.select()">
@@ -40,7 +43,7 @@
     <input type="text" id="valueToFilterBy" onclick="this.select()">
     <button id="filterInfo" onclick="inheritedClient.filterByKeyAndValue(resourceSelector.value,
     keyToFilterBy.value, valueToFilterBy.value)">Filter records</button><br><br>
-    <button id="showInfo" onclick="mainClient.getAllRecords(resourceSelector.value)">Show all records</button>
+    <button id="showAllRecords" onclick="mainClient.getAllRecords(resourceSelector.value)">Show all records</button>
     <button id="countRecords" onclick="mainClient.countRecords(resourceSelector.value)">Count an amount of values</button>
     </body>
   <script src="TestMainClass.js"></script>
