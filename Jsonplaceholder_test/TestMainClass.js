@@ -1,4 +1,5 @@
 class Main {
+  //show all records of selected resource
   getAllRecords(resource) {
     let url = ('https://jsonplaceholder.typicode.com' + `/${resource}`);
     fetch(url)
@@ -6,6 +7,7 @@ class Main {
     .then(json => console.log(json))
   }
 
+  //post a record (available only for /posts resource)
   postRecord(userID, userTitle, userBody) {
     let url = ('https://jsonplaceholder.typicode.com/posts');
     fetch(url, {
@@ -23,6 +25,7 @@ class Main {
     .then(json => console.log(json))
   }
 
+  //count an amount of records of selected resource
   async countRecords(resource) {
     let url = ('https://jsonplaceholder.typicode.com' + `/${resource}`);
     let response = await fetch(url);

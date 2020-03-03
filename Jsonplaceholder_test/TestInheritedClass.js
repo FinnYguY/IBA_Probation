@@ -1,5 +1,6 @@
 class Inherited extends Main{
 
+  //show record of a current with the entered number
   showCurrentRecord(resource, number) {
     let url = ('https://jsonplaceholder.typicode.com' + `/${resource}` + `/${number}`);
     fetch(url)
@@ -7,6 +8,7 @@ class Inherited extends Main{
     .then(json => console.log(json))
   }
 
+  //filter current resource by key and value
   filterByKeyAndValue(resource, key, value) {
     let url = ('https://jsonplaceholder.typicode.com' + `/${resource}` + `?${key}=${value}`);
     fetch(url)
@@ -14,6 +16,7 @@ class Inherited extends Main{
     .then(json => console.log(json))
   }
 
+  //redirect to a page of a picture with the entered number
   async showPicture(number) {
     let url = ('https://jsonplaceholder.typicode.com/photos' + `/${number}`);
     let response = await fetch(url)
@@ -23,6 +26,7 @@ class Inherited extends Main{
     window.location.href = photoUrl;
   }
 
+  //change the information of a selected record
   patchInfo(resource, number, key, value) {
     let url = ('https://jsonplaceholder.typicode.com' + `/${resource}` + `/${number}`);
     fetch(url, {
@@ -38,6 +42,7 @@ class Inherited extends Main{
     .then(json => console.log(json))
   }
 
+  //delete selected record
   deleteInfo(resource, number) {
     let url = ('https://jsonplaceholder.typicode.com' + `/${resource}` + `/${number}`);
     fetch(url, {
