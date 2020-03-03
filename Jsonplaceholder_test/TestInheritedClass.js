@@ -18,6 +18,7 @@ class Inherited extends Main{
 
   //redirect to a page of a picture with the entered number
   async showPicture(number) {
+    console.log("Processing... Wait a sec, please");
     let url = ('https://jsonplaceholder.typicode.com/photos' + `/${number}`);
     let response = await fetch(url)
     let jsonResponse = await response.json();
@@ -53,5 +54,4 @@ class Inherited extends Main{
     console.log(`Record №${number} deleted`);
   }
 }
-
 let inheritedClient = new Inherited();
