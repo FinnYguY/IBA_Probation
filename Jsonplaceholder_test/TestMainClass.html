@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <b>Choose a user to work as:</b>
+    <select id="userSelector">
+      <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+      <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+      <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+      <option value="10">10</option>
+    </select> <br><br>
+    <b>Eneter record <u>title</u> and <u>text</u> to post:</b> <br>
+    <input type="text" size="43" id="userTitle" value="Title" onclick="this.select()"><br>
+    <textarea id="userBody" rows="5" cols="40">Text</textarea><br>
+    <button type="button" id="postRecord" onclick="mainClient.postRecord(userSelector.value,
+    userTitle.value, userBody.value)">Post a record</button><br><br>
+    <b>Choose a resource to work with:</b>
+    <select id="resourceSelector">
+      <option value="posts">Posts</option>
+      <option value="comments">Comments</option>
+      <option value="albums">Albums</option>
+      <option value="photos">Photos</option>
+      <option value="todos">Todos</option>
+      <option value="users">Users</option>
+    </select><br><br>
+    <b>Record number: </b> <input type="number" id="recordNumber" value="1" onclick="this.select()">
+    <button id="deleteInfo" onclick="inheritedClient.deleteInfo(resourceSelector.value, recordNumber.value)">Delete record</button>
+    <button id="showPicture" onclick="inheritedClient.showPicture(recordNumber.value)">Show picture</button><br><br>
+    <b>Key and info to patch:</b>
+    <input type="text" id="keyToPatch" onclick="this.select()">
+    <input type="text" id="infoToPatch" onclick="this.select()">
+    <button id="patchInfo" onclick="inheritedClient.patchInfo(resourceSelector.value,
+    recordNumber.value, keyToPatch.value, infoToPatch.value)">Patch record</button>
+    <br><br>
+    <b>Key and value to filter by: </b>
+    <input type="text" id="keyToFilterBy" onclick="this.select()">
+    <input type="text" id="valueToFilterBy" onclick="this.select()">
+    <button id="filterInfo" onclick="inheritedClient.filterByKeyAndValue(resourceSelector.value,
+    keyToFilterBy.value, valueToFilterBy.value)">Filter records</button><br><br>
+    <button id="showInfo" onclick="mainClient.getAllRecords(resourceSelector.value)">Show all records</button>
+    <button id="countRecords" onclick="mainClient.countRecords(resourceSelector.value)">Count an amount of values</button>
+    </body>
+  <script src="TestMainClass.js"></script>
+  <script src="TestInheritedClass.js"></script>
+</html>
