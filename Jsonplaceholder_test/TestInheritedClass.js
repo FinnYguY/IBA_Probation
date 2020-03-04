@@ -1,25 +1,21 @@
 class Inherited extends Main{
 
   //show record of a current with the entered number
-  showCurrentRecord(resource, number) {
-    let url = ('https://jsonplaceholder.typicode.com' + `/${resource}` + `/${number}`);
-    fetch(url)
-    .then(response => response.json())
-    .then(json => console.log(json))
+  async showCurrentRecord(resource, number) {
+    let url = (this.urlBegin + `/${resource}` + `/${number}`);
+    this.responseToConsole(await fetch(url));
   }
 
   //filter current resource by key and value
-  filterByKeyAndValue(resource, key, value) {
-    let url = ('https://jsonplaceholder.typicode.com' + `/${resource}` + `?${key}=${value}`);
-    fetch(url)
-    .then(response => response.json())
-    .then(json => console.log(json))
+  async filterByKeyAndValue(resource, key, value) {
+    let url = (this.urlBegin + `/${resource}` + `?${key}=${value}`);
+    this.responseToConsole(await fetch(url));
   }
 
   //redirect to a page of a picture with the entered number
   async showPicture(number) {
     console.log("Processing... Wait a sec, please");
-    let url = ('https://jsonplaceholder.typicode.com/photos' + `/${number}`);
+    let url = (this.urlBegin+ '/photos' + `/${number}`);
     let response = await fetch(url)
     let jsonResponse = await response.json();
     console.log(jsonResponse);
@@ -28,9 +24,9 @@ class Inherited extends Main{
   }
 
   //change the information of a selected record
-  patchInfo(resource, number, key, value) {
-    let url = ('https://jsonplaceholder.typicode.com' + `/${resource}` + `/${number}`);
-    fetch(url, {
+  async patchInfo(resource, number, key, value) {
+    let url = (this.urlBegin + `/${resource}` + `/${number}`);
+    this.responseToConsole(await fetch(url, {
       method: 'PATCH',
       body: JSON.stringify({
         [key]: value
@@ -38,20 +34,18 @@ class Inherited extends Main{
       headers: {
         "Content-type": "application/json; charset=UTF-8"
       }
-    })
-    .then(response => response.json())
-    .then(json => console.log(json))
+    }));
   }
 
   //delete selected record
-  deleteInfo(resource, number) {
-    let url = ('https://jsonplaceholder.typicode.com' + `/${resource}` + `/${number}`);
-    fetch(url, {
+  async deleteInfo(resource, number) {
+    console.log("Processing... Wait a sec, please");
+    let url = (this.urlBegin + `/${resource}` + `/${number}`);
+    this.responseToConsole(await fetch(url, {
       method: 'DELETE'
-    })
-    .then(response => response.json())
-    .then(json => console.log(json))
+    }))
     console.log(`Record №${number} deleted`);
   }
 }
+
 let inheritedClient = new Inherited();
