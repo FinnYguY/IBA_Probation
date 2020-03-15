@@ -1,0 +1,39 @@
+div.servicesBlock {
+  background-color: #181828;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+}
+
+i.services {
+  color: yellow;
+  font-size: 35px;
+  text-align: left;
+  padding: 5px;
+  margin: 5px;
+}
+
+p.services {
+  text-align: left;
+  height: 200px;
+  width: 300px;
+  margin: 0 0 0 50px;
+}
+
+li.servicesList {
+  width: 400px;
+  display: inline-block;
+}
+
+span.servicesListHeader {
+  color: yellow;
+
+}
+
+.fa-li {
+  margin: 5px;
+}
+
+ul.fa-ul {
+  margin: 100px 0 25px 200px;
+}
