@@ -6,25 +6,35 @@
 body {
   background-image: url(https://images.wallpaperscraft.ru/image/zvezdnoe_nebo_nochnoe_nebo_zvezdy_130936_1920x1080.jpg);
   background-attachment: fixed;
-  background-size: contain;
-}
-
-h2 {
-  font-size: 15px;
-  padding: 5px;
+  background-size: cover;
+  background-repeat: repeat-y;
 }
 
 div.hello {
+  width: 100%;
   background-image: url(https://images.wallpaperscraft.ru/image/zvezdnoe_nebo_noch_gory_117812_1920x1080.jpg);
+  background-attachment: scroll;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
-  background-attachment: scroll;
+  background-position: center;
+  padding: 10% 0 15%;
+}
+
+div.hello h1 {
   font-family:Lucida Sans Unicode;
+  padding: 5%;
+  padding-bottom: 0;
   text-align: center;
-  padding: 15% 10% 30%;
   color: white;
-  font-size: 35px;
+  font-size: 7vw;
+}
+
+div.hello h2 {
+  font-family:Lucida Sans Unicode;
+  padding: 1%;
+  text-align: center;
+  color: white;
+  font-size: 1.5vw;
 }
 
 .bkgheader {
@@ -33,6 +43,7 @@ div.hello {
   font-size: 70px;
   color: yellow;
   opacity: 0.3;
+  margin-top: 20px;
 }
 
 .bkgparagraph {

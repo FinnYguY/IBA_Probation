@@ -3,11 +3,10 @@ div.servicesBlock {
   color: white;
   margin: 20px 40px;
   padding: 50px 30px;
-  background-image: url(https://papers.co/wallpaper/papers.co-mt89-mountain-night-snow-dark-star-40-wallpaper.jpg?download=true);
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-attachment: scroll;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
 
 i.services {
@@ -22,11 +21,12 @@ p.services {
   text-align: left;
   height: 150px;
   width: 300px;
-  margin: 0 0 0 50px;
 }
 
 li.servicesList {
-  width: 400px;
+  width: 280px;
+  height: 150px;
+  margin: 10px;
   display: inline-block;
 }
 
@@ -34,10 +34,23 @@ span.servicesListHeader {
   color: yellow;
 }
 
-li.fa-li {
-  margin: 5px;
+ul.fa-ul {
+  margin: 10px;
 }
 
-ul.fa-ul {
-  margin: 40px 0 0 100px;
+img.servicesImg {
+  display: block;
+  margin: 40px;
+  width: 400px;
+  height: 350px;
+}
+
+@media screen and (max-width: 1245px) {
+  div.servicesBlock {
+    margin: 20px;
+    background-image: none;
+  }
+  i.services {font-size: 20px; margin-right: -20px;}
+  img.mobile {display: none;}
+  ul.fa-ul {width: 280px;}
 }

@@ -1,0 +1,40 @@
+div.contactBlock {
+  margin: 20px 40px;
+  /* padding: 20px 40px; */
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+p.contactText {
+  font-family:Lucida Sans Unicode;
+  color: white;
+  text-align: left;
+  font-size: 30px;
+  padding: 10px;
+}
+
+a.contact:link, a.contact:visited {
+  font-family:Lucida Sans Unicode;
+  font-size: 30px;
+  color: yellow;
+  text-decoration: none;
+}
+
+a.contact:hover {
+  text-decoration: underline;
+  color: yellow;
+}
+
+a.contact:active {
+  text-decoration: underline;
+  color: #999900;
+}
+
+@media screen and (max-width: 956px) {
+  div.contactBlock {
+    flex-direction: column;
+  }
+  p.contactText {font-size: 15px;}
+}
