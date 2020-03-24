@@ -7,6 +7,8 @@ div.servicesBlock {
   align-items: center;
   align-content: center;
   justify-content: center;
+  opacity: 0;
+  transition: 3s;
 }
 
 i.services {

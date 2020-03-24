@@ -1,10 +1,11 @@
 div.contactBlock {
   margin: 20px 40px;
-  /* padding: 20px 40px; */
   display: flex;
   align-items: center;
   align-content: center;
   justify-content: center;
+  opacity: 0;
+  transition: 3s;
 }
 
 p.contactText {
@@ -15,20 +16,26 @@ p.contactText {
   padding: 10px;
 }
 
-a.contact:link, a.contact:visited {
+a.contact {
   font-family:Lucida Sans Unicode;
   font-size: 30px;
   color: yellow;
   text-decoration: none;
 }
 
-a.contact:hover {
-  text-decoration: underline;
-  color: yellow;
+a.contact:after {
+  content: "";
+  display: block;
+  background: yellow;
+  height: 3px;
+  width: 0;
+  transition: 0.3s;
+}
+a.contact:hover:after {
+  width: 100%;
 }
 
 a.contact:active {
-  text-decoration: underline;
   color: #999900;
 }
 

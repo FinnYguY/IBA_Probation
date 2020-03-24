@@ -6,6 +6,8 @@ div.featuresBlock {
   align-items: center;
   align-content: center;
   justify-content: center;
+  transition: 3s;
+  opacity: 0;
 }
 
 div.features {
@@ -13,6 +15,7 @@ div.features {
   color: white;
   padding: 3%;
   margin: 3%;
+  transition: 1s;
 }
 
 i.features {

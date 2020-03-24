@@ -11,17 +11,18 @@
     <script src="https://kit.fontawesome.com/790d52a173.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Features.css">
+    <script src="Animations.js"></script>
   </head>
   <body>
     <!-- Hello page -->
-    <div class="hello">
+    <div class="hello showup">
       <h1>Hello there</h1>
       <h2>We are Leon - Super Creative and Minimal</h2>
       <h2>Agency Web Template</h2>
     </div>
 
     <!-- Features elements -->
-    <div class="featuresBlock">
+    <div class="featuresBlock showup">
       <div class="features">
         <i class="fas fa-magic features"></i>
         <h3 class="features">Tell Us Your Idea</h3>
@@ -44,10 +45,10 @@
 
     <!-- Services section -->
     <div>
-      <h1 class="bkgheader">services</h1>
-      <p class="bkgparagraph">Don't be busy, be productive</p>
+      <h1 class="bkgheader showup bkg">services</h1>
+      <p class="bkgparagraph showup bkg">Don't be busy, be productive</p>
     </div>
-    <div class="servicesBlock">
+    <div class="servicesBlock showup">
       <ul class="fa-ul">
         <li class="servicesList"><span class="fa-li"><i class="fas fa-pencil-alt services"></i></span>
           <p class="features services"> <span class="servicesListHeader"><b>Graphic Design</b></span> <br><br>
@@ -71,34 +72,40 @@
 
     <!-- Portfolio section -->
     <div>
-      <h1 class="bkgheader">portfolio</h1>
-      <p class="bkgparagraph">If you do it right, it will last forever</p>
+      <h1 class="bkgheader showup">portfolio</h1>
+      <p class="bkgparagraph showup">If you do it right, it will last forever</p>
     </div>
-    <div class="portfolioBlock">
+    <div class="portfolioBlock showup">
       <div class="portfolio">
-        <img class="portfolioImg" src="https://trkmedia.ollcdn.net/uploads/public/uploads/public/novosti/5cc062dedec66_brandon_siu_608784_unsplash.jpeg">
-        <p class="portfolio"><b>New Project</b> <br><br>
-          Random text written here in different lines using left alignment</p>
+        <a class="portfolioLink" href="#">
+          <img class="portfolioImg" src="https://trkmedia.ollcdn.net/uploads/public/uploads/public/novosti/5cc062dedec66_brandon_siu_608784_unsplash.jpeg">
+          <p class="portfolio"><b>New Project</b> <br><br>
+            Random text written here in different lines using left alignment</p>
+        </a>
       </div>
       <div class="portfolio mobile">
-        <img class="portfolioImg" src="https://images.pexels.com/photos/114251/pexels-photo-114251.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
-        <p class="portfolio"><b>New Project</b> <br><br>
-          Random text written here in different lines using left alignment</p>
+        <a class="portfolioLink" href="#">
+          <img class="portfolioImg" src="https://images.pexels.com/photos/114251/pexels-photo-114251.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+          <p class="portfolio"><b>New Project</b> <br><br>
+            Random text written here in different lines using left alignment</p>
+        </a>
       </div>
       <div class="portfolio mobile">
-        <img class="portfolioImg" src="https://images.unsplash.com/photo-1485356824219-4bc17c2a2ea7?ixlib=rb-1.2.1&w=1000&q=80">
-        <p class="portfolio"><b>New Project</b> <br><br>
-          Random text written here in different lines using left alignment</p>
+        <a class="portfolioLink" href="#">
+          <img class="portfolioImg" src="https://images.unsplash.com/photo-1485356824219-4bc17c2a2ea7?ixlib=rb-1.2.1&w=1000&q=80">
+          <p class="portfolio"><b>New Project</b> <br><br>
+            Random text written here in different lines using left alignment</p>
+        </a>
       </div>
     </div>
-    <a class="portfolioButton" href="">Show Me More</a>
+    <a class="portfolioButton showup" href="#">Show Me More</a>
 
     <!-- About section -->
     <div>
-      <h1 class="bkgheader">about</h1>
-      <p class="bkgparagraph">Less is more work</p>
+      <h1 class="bkgheader showup">about</h1>
+      <p class="bkgparagraph showup">Less is more work</p>
     </div>
-    <div class="aboutBlock">
+    <div class="aboutBlock showup">
       <img class="aboutImg mobile" src="https://images.wallpaperscraft.ru/image/zvezdnoe_nebo_gory_noch_119799_5184x3456.jpg">
       <div class="aboutTextBlock">
         <p class="aboutText"><b>Random text written here like header in different lines using left alignment.
@@ -113,10 +120,10 @@
 
     <!-- Contact section -->
     <div>
-      <h1 class="bkgheader">contact</h1>
-      <p class="bkgparagraph">I was born to create</p>
+      <h1 class="bkgheader showup">contact</h1>
+      <p class="bkgparagraph showup">I was born to create</p>
     </div>
-    <div class="contactBlock">
+    <div class="contactBlock showup">
       <p class="contactText"><b>Feel free to drop us a line at:</b></p><br>
       <a class="contact" href="mailto:leonagency@mail.com">leonagency@mail.com</a>
     </div>

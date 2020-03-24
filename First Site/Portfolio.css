@@ -5,6 +5,8 @@ div.portfolioBlock {
   align-items: center;
   align-content: center;
   justify-content: center;
+  opacity: 0;
+  transition: 3s;
 }
 
 div.portfolio {
@@ -18,9 +20,9 @@ div.portfolio {
   transition: 0.5s;
 }
 
-div.portfolio:hover {
-  box-shadow: 0 0 10px 5px yellow;
-}
+div.portfolio:hover {box-shadow: 0 0 10px 5px yellow;}
+
+div.portfolio:active {box-shadow: 0 0 10px 5px #999900;}
 
 img.portfolioImg {
   width: 300px;
@@ -35,6 +37,11 @@ p.portfolio {
   padding: 10px 20px;
 }
 
+a.portfolioLink:link, a.portfolioLink:visited {
+  text-decoration: none;
+  color: white;
+}
+
 a.portfolioButton:link, a.portfolioButton:visited {
   font-family:Lucida Sans Unicode;
   display: block;
@@ -45,7 +52,8 @@ a.portfolioButton:link, a.portfolioButton:visited {
   margin: 0 auto 20px;
   width: 140px;
   padding: 5px 10px;
-  transition: 0.5s;
+  opacity: 0;
+  transition: all 0.5s, opacity 3s;
 }
 
 a.portfolioButton:hover {
